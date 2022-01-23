@@ -28,8 +28,14 @@ app.get("*", (req, res) => {
   res.sendFile(path.resolve(__dirname, "frontend/build/index.html"));
 });
 
-const PORT = process.env.PORT || 3001;
-app.listen(PORT);
+app.listen(process.env.PORT || 3001, () => {
+  console.log("app work");
+  if (process.env.NODE_ENV === "test") app.set("port", 3001);
+  else app.set("port", process.env.PORT || 3000);
+});
+
+// const PORT = process.env.PORT || 3001;
+// app.listen(PORT);
 
 
 // console.log(process.env.PORT)
