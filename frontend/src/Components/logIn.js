@@ -15,6 +15,8 @@ export default function LogIn({ setToken }) {
     setPass(e.target.value);
   };
   const logIn = async () => {
+    console.log(email,
+      pass);
     try {
       const res = await axios.post("/logIn", {
         email,
