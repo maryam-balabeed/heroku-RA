@@ -7,7 +7,7 @@ export default function Favorit( {token} ) {
     const [Favorit, setFavorit] = useState([]);
      useEffect(async () => {          
          if(token) {
-             const Fav = await axios.get("http://localhost:5000/Favorit", {
+             const Fav = await axios.get("https://heroku-dep-raghad.herokuapp.com/Favorit", {
                  headers: {authorization: "Bearer " + token},
              });
              setFavorit(Fav.data);
