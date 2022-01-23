@@ -12,6 +12,10 @@
     "client": "cd frontend && npm start",
     "start": "nodemon app.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maryam-balabeed/heroku-RA"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
