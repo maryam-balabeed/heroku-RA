@@ -20,7 +20,7 @@ export default function Comment({}) {
     console.log(id, "id");
     const tokenFromStorage = localStorage.getItem("token");
     setToken(tokenFromStorage);
-    const res = await axios.get(`https://heroku-dep-raghad.herokuapp.com/comment/${id}`, {
+    const res = await axios.get(`http://localhost:5000/comment/${id}`, {
       headers: { authorization: "Bearer " + tokenFromStorage },
     });
     console.log(res.data);
@@ -34,7 +34,7 @@ export default function Comment({}) {
 
   const addComment = async () => {
     const res = await axios.post(
-      `https://heroku-dep-raghad.herokuapp.com/comment/${id}`,
+      `http://localhost:5000/comment/${id}`,
       {
         comment: input,
       },
@@ -53,7 +53,7 @@ export default function Comment({}) {
     const updatedComments = comments.filter((el, i) => i != index);
 
     const deleteComment = await axios.patch(
-      `https://heroku-dep-raghad.herokuapp.com/comment/${movieId}`,
+      `http://localhost:5000/comment/${movieId}`,
       { comments: updatedComments },
 
       {

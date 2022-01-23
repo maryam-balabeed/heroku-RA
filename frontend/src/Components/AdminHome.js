@@ -36,7 +36,7 @@ export default function AdminHome({token}) {
          try{
           //  console.log(token)
         const res = await axios.post(
-            `https://heroku-dep-raghad.herokuapp.com/movies`,
+            `http://localhost:5000/movies`,
             {
                 name: name,
                 description: description,

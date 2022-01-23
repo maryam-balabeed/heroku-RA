@@ -6,6 +6,7 @@ require("./db/db");
 app.use(express.json());
 app.use(cors());
 const path = require("path");
+const PORT = process.env.PORT || 5000;
 
 
 const moviesRoute = require("./routers/Route/moviesRoute");
@@ -23,7 +24,7 @@ app.use(logInRoute);
 
 
 
-app.listen(process.env.PORT || 3001, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("app work");
   if (process.env.NODE_ENV === "production") {
     // app.set(PORT, 3001);
@@ -32,7 +33,7 @@ app.listen(process.env.PORT || 3001, () => {
       console.log(path.resolve(__dirname, "frontend/build/index.html"));
       res.sendFile(path.resolve(__dirname + "/frontend/build", "index.html"));
     });
-  } else app.set(PORT, process.env.PORT || 3001);
+  } else app.set(PORT, process.env.PORT || 5000);
 });
 
 // const PORT = process.env.PORT || 3001;
