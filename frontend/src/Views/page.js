@@ -27,7 +27,7 @@ export default function Movies({ token }) {
 
     // اليوزر ياخذه من الصفحه الي قبل اما الادمن
     // ياخذ من الوكل ستوريج
-    const res = await axios.get("http://localhost:5000/movies", {
+    const res = await axios.get("/movies", {
       headers: { authorization: "Bearer " + token },
       // useEffect نستدعيها مرا وحده الي هي يوم نعمل ل Commponet init  بحيث يجيب البيانات من Api
     });
@@ -39,7 +39,7 @@ export default function Movies({ token }) {
 
   useEffect(async () => {
     if (token) {
-      const Fav = await axios.get("http://localhost:5000/movies", {
+      const Fav = await axios.get("/movies", {
         headers: { authorization: "Bearer " + token },
       });
       setFavorit(Fav.data);
@@ -62,7 +62,7 @@ export default function Movies({ token }) {
   const deleteMovies = async (id, index) => {
     console.log(id);
     const deleteMovies = await axios.delete(
-      `http://localhost:5000/movies/${id}`,
+      `/movies/${id}`,
 
       {
         headers: { authorization: `Bearer ${token}` },
@@ -84,7 +84,7 @@ export default function Movies({ token }) {
   const toggleColor = async (id) => {
     try {
       const res = await axios.post(
-        `http://localhost:5000/Favorit/${id}`,
+        `/Favorit/${id}`,
         {},
         { headers: { authorization: "Bearer " + token } }
       );
@@ -104,7 +104,7 @@ export default function Movies({ token }) {
   const updatenam = async (id, i) => {
     console.log(id);
     const updateMovies = await axios.put(
-      `http://localhost:5000/updet`,
+      `/updet`,
       {
         id: id,
         newName: inputNameMovie,

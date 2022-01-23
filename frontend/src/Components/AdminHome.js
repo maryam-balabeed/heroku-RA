@@ -36,7 +36,7 @@ export default function AdminHome({token}) {
          try{
           //  console.log(token)
         const res = await axios.post(
-            `http://localhost:5000/movies`,
+            `/movies`,
             {
                 name: name,
                 description: description,

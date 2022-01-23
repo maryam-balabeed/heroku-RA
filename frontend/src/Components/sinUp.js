@@ -19,7 +19,7 @@ export default function SinUp() {
     setPass(e.target.value);
   };
   const addUser = async () => {
-    const res = await axios.post("http://localhost:5000/sinUp", {
+    const res = await axios.post("/sinUp", {
       name,
       email,
       pass,
