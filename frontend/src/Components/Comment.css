@@ -1,0 +1,71 @@
+
+.iiii{
+    display: flex;
+  margin-left: 320px;
+}
+
+.input{
+    display: flex;
+    height: 50px;
+    width: 100%;
+    margin-right: 35px;
+    border: none;
+    background: transparent;
+    outline: none;
+    height: 100px;
+    font-size: 100px;
+    font-family: 'lndie flower' , cursive;
+}
+
+.dlate{
+    display: flex;
+    width: 250%;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 0px;
+    margin-left: 443px;
+}
+
+
+.nameee{
+    background: transparent;
+
+    display: flex;
+    font-size: 30px;
+   margin: 30px;
+   margin-left: 500px;
+
+
+}
+.daecription{
+    display: flex;
+    margin-top: 50px;
+    box-sizing: border-box;
+    padding: 55px 55px;
+box-shadow: darkslategrey;
+}
+
+.imagee{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 400px;
+    border: 7.5px solid #ea9397;
+
+
+}
+
+.video-responsive{
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+  }

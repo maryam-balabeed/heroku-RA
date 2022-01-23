@@ -1,0 +1,30 @@
+.ddd{
+    text-align: center;
+    }
+    
+    
+  
+    .ddd{
+        text-align: center;
+        width: 400px;
+        height: 425px;
+        background: #000;
+        color: #fff;
+        top: 48%;
+        left: 45%;
+        position: absolute;
+        transform: translate(-40%,-40%);
+        box-sizing: border-box;
+        padding: 70px 30px;
+        opacity: 6px;
+        transition: all ease-in-out 250ms;
+        background-color: #333;
+     
+    }
+    
+   
+        
+    button{
+        border-color: rgb(12, 11, 12);
+        box-shadow: beige;
+    }

@@ -1,0 +1,99 @@
+body{
+}
+
+.loginbox{
+text-align: center;
+width: 400px;
+height: 425px;
+background: #000;
+color: #fff;
+top: 50%;
+left: 6%;
+position: absolute;
+transform: translate(-40%,-40%);
+box-sizing: border-box;
+padding: 70px 30px;
+background-color: #333;
+opacity: 6px;
+transition: all ease-in-out 250ms;
+}
+
+.avater{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+background-color: #ecaf08;}
+h1{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'lndie flower' , cursive;
+    font-style: initial;
+
+}
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    font-family: 'lndie flower' , cursive;
+}
+
+.loginbox input{
+    width: 300px;
+    margin-bottom: 20px;
+    font-family: 'lndie flower' , cursive;
+
+}
+
+.loginbox input[type="text"], input[type="password"]input[type="name"],input[type="emal"]{
+border: none;
+border-bottom: 1px solid black;
+background: transparent;
+outline: none;
+height: 40px;
+color: black;
+font-size: 16px;
+font-family: 'lndie flower' , cursive;
+
+}
+.loginbox input[type="submit"]{
+    border: none;
+    outline: none;
+    height: 40px;
+background: #efefef;
+color: #fff;
+font-size: 18px;
+border-radius: 20px;
+font-family: 'lndie flower' , cursive;
+font-weight: bold;
+}
+
+.input[type="signup"]:hover{
+    cursor: pointer;
+    background-color: #ecaf08;
+    color: #000;
+
+
+}
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+line-height: 20px;
+color: darkgray;
+font-family: 'lndie flower' , cursive;
+
+}
+
+.loginbox a:hover{
+    color: #ecaf08;
+
+}
+
+
+
+
+

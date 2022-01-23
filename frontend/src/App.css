@@ -1,0 +1,16 @@
+* {
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+html,
+body {
+  font-family: "Baloo Bhaijaan 2", cursive;
+}
+
+body {
+  background-color: darkslategrey;
+}
+
+.icon > svg {
+  cursor: pointer;
+}

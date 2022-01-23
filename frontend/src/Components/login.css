@@ -1,0 +1,28 @@
+.home{
+  background-image: var("https://i.pinimg.com/originals/4f/19/a5/4f19a5626fef8883af0bfb4cd86ee1e1.jpg"); 
+
+}
+.loginbox{
+  padding: 14px 16px;
+  margin-left: 40%;
+   width: 50%;
+}
+.avater{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: calc(50% - 50px);
+}
+.settingspplcon{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  /* background-color: lightcoral; */
+  color: aliceblue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
