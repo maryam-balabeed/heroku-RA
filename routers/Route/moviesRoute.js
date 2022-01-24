@@ -1,5 +1,5 @@
 const express = require("express");
-const { adminAuth } = require("../Controler/admain");
+const { adminAuth } = require("../Controler/Admain");
 const moviesRoute = express.Router();
 
 const { getmovies, postmovies, deleteMovies,getComment, addComment, deleteComment, postvideo, updatemovies} = require("../Controler/movies");

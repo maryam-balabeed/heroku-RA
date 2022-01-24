@@ -1,5 +1,5 @@
 const express = require("express");
-const { adminAuth } = require("../Controler/admain");
+const { adminAuth } = require("../Controler/Admain");
 const favortRoute = express.Router();
 
 const {  getFavorit, addFavorit} = require("../Controler/Favorit");
